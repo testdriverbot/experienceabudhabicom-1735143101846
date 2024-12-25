@@ -1,0 +1,12 @@
+version: 4.1.32
+steps:
+  - prompt: Assert that the webpage loads without errors.
+    commands:
+      - command: assert
+        expect: the webpage displays "Experience Abu Dhabi"
+  - prompt: >-
+      Assert that the "Experience Abu Dhabi" logo is visible.  # Use the content
+      of the file from the environment
+    commands:
+      - command: assert
+        expect: the "Experience Abu Dhabi" logo is visible
