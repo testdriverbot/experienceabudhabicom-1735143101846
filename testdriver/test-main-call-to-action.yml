@@ -1,0 +1,22 @@
+version: 4.1.32
+steps:
+  - prompt: Focus the browser window.
+    commands: []
+  - prompt: Identify the main call to action element on the page.
+    commands:
+      - command: hover-text
+        text: Explore More
+        description: main call to action button in the banner
+        action: hover
+  - prompt: Click on the main call to action.
+    commands:
+      - command: hover-text
+        text: Explore More
+        description: main call to action button in the banner
+        action: click
+  - prompt: >-
+      Assert that it navigates to the expected page or displays the expected
+      content.  # Use the content of the file from the environment
+    commands:
+      - command: assert
+        expect: Download the brochure is visible on the page
