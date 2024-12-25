@@ -1,0 +1,66 @@
+version: 4.1.32
+steps:
+  - prompt: Focus the browser window.
+    commands:
+      - command: focus-application
+        name: Google Chrome
+  - prompt: >-
+      Click on each link in the navigation menu  # Use the content of the file
+      from the environment
+    commands:
+      - command: hover-text
+        text: Experiences
+        description: first link in the navigation menu
+        action: click
+      - command: hover-text
+        text: Activities
+        description: second link in the navigation menu
+        action: click
+      - command: hover-text
+        text: Auto
+        description: third link in the navigation menu
+        action: click
+      - command: hover-text
+        text: Beyond Abu Dhabi
+        description: fourth link in the navigation menu
+        action: click
+      - command: hover-text
+        text: Culture
+        description: fifth link in the navigation menu
+        action: click
+      - command: hover-text
+        text: Dine
+        description: sixth link in the navigation menu
+        action: click
+      - command: hover-text
+        text: Festive Guide 2024
+        description: seventh link in the navigation menu
+        action: click
+      - command: hover-text
+        text: Guides
+        description: eighth link in the navigation menu
+        action: click
+      - command: hover-text
+        text: Offers
+        description: ninth link in the navigation menu
+        action: click
+      - command: hover-text
+        text: Shop
+        description: tenth link in the navigation menu
+        action: click
+      - command: hover-text
+        text: Spa
+        description: eleventh link in the navigation menu
+        action: click
+      - command: hover-text
+        text: Sports
+        description: twelfth link in the navigation menu
+        action: click
+      - command: hover-text
+        text: Stay
+        description: thirteenth link in the navigation menu
+        action: click
+      - command: hover-text
+        text: Contact
+        description: fourteenth link in the navigation menu
+        action: click
